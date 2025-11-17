@@ -16,6 +16,13 @@ export default function Footer1() {
     width={300}
     style={{ height: "50px", width: "auto", cursor: "pointer" }}
   />
+   <Image
+    src="/assets/icon/oasis_qr.png"
+    alt="qr_code"
+    height={100}
+    width={300}
+    style={{ height: "100px", width: "auto", cursor: "pointer" }}
+  />
                                     </div>
                 <div className="footer-main">
                     <div>

@@ -193,9 +193,20 @@ display: flex;
     gap: 25px;
 }
 
+.mid_btn {
+    display: flex
+;
+    justify-content: center;
+}
+
 .logo_alignment {
 display: flex;
 justify-content: space-between;
+}
+
+.gallery_container_new {
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 .themed_icons {
@@ -513,7 +524,8 @@ h6 {
 .shiro_logo_container {
     margin-top: 70px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+     align-items: center;
 }
 
 .currency_container {
@@ -7751,6 +7763,11 @@ Project Four Css
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
+
+    .shiro_logo_container {
+   flex-direction: column;
+    gap: 40px; /* space between images */
+}
 
     .mobile_logo_c {
         display: flex !important;

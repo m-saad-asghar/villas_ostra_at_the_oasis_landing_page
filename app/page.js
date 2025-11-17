@@ -21,6 +21,7 @@ import WhyInvest from "@/components/CustomComponents/WhyInvest"
 import Properties from "@/components/CustomComponents/Properties"
 import Form from "@/components/CustomComponents/Form"
 import Map from "@/components/Map"
+import Gallery from "@/components/CustomComponents/Gallery"
 // import Map from "@/components/CustomComponents/Map"
 export default function Home() {
 
@@ -29,6 +30,7 @@ export default function Home() {
             <Layout headerStyle={1} footerStyle={1}>
                 <Banner />
                 <WhyInvest/>
+                <Gallery/>
                 <Properties/>
                 <Map/>
                 <Form/>
