@@ -192,7 +192,7 @@ export default function ContactForm() {
 };
 
   return (
-    <div className="form_container_main bg_container">
+    <div className="form_container_main bg_container" id="contact-form-main">
       <form onSubmit={handleSubmit}>
       <div className="mb-3">
          <label className="form_label_main">

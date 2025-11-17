@@ -24,7 +24,7 @@ export default function Properties() {
 }
     return (
         <>
-            <section className="custom_container properties_section" id="polo">
+            <section className="custom_container properties_section" id="amenities">
               <div className="main-slider-one__content">
         <div className='banner_text_container'>
 
