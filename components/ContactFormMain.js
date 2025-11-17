@@ -22,6 +22,7 @@ export default function ContactForm() {
      const [disableBtn, setDisableBtn] = useState(false);
      const searchParams = useSearchParams();
      const [countryValue, setCountryValue] = useState('');
+     const [countryCode, setCountryCode] = useState('ae');
   const [originValue, setOriginValue] = useState('');
 
   // 🔐 reCAPTCHA for THIS component only
@@ -51,8 +52,10 @@ export default function ContactForm() {
     .toLowerCase()
     .replace(/\b\w/g, (char) => char.toUpperCase());
   setCountryValue(formattedCountry);
+  setCountryCode(formattedCountry);
 } else {
       setCountryValue('');
+       setCountryCode('ae');
     }
   }, [searchParams]);
 
@@ -235,7 +238,15 @@ export default function ContactForm() {
         </label>
          <PhoneInput
          name="phone"
-         country={"ae"}
+          country={
+  countryCode == "British" 
+    ? "gb" 
+    : countryCode == "Saudi Arabia" 
+      ? "sa" 
+      : countryCode === "United Arab Emirates" 
+        ? "ae" 
+        : "ae"
+}
          value={formData.phone}
         onChange={(value) =>
         setFormData({
