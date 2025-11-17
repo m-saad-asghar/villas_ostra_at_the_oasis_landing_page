@@ -193,6 +193,11 @@ display: flex;
     gap: 25px;
 }
 
+.logo_alignment {
+display: flex;
+justify-content: space-between;
+}
+
 .themed_icons {
     margin-top: 50px;
 }
@@ -455,6 +460,13 @@ h6 {
 .main_logo_styling {
     height: 100%;
     width: 100%;
+    max-width: 160px;
+    /* filter: invert(100%) brightness(200%); */
+}
+
+.main_logo_styling_logo {
+    height: 100%;
+    width: 100%;
     max-width: 130px;
     /* filter: invert(100%) brightness(200%); */
 }
@@ -584,6 +596,10 @@ height: 100%;
     padding-right: 100px;
     padding-left: 100px;
     height: 100vh;
+}
+
+.logo_spacing {
+    padding-right: 15px;
 }
 
 .map_wrapper {
@@ -6036,6 +6052,9 @@ Cart Page
     .main_logo_styling {
     max-width: 150px;
 }
+  .main_logo_styling_logo {
+    max-width: 150px;
+}
 .content {
     font-size: 2rem;
 }
@@ -7719,6 +7738,12 @@ Project Four Css
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
 
+    .mobile_logo_c {
+        display: flex !important;
+        justify-content: space-between !important;
+        width: 100%;
+    }
+
      .captcha_container {
     margin-top: 30px;
 }
@@ -9282,9 +9307,10 @@ padding: 50px 0px;
     }
 
     .logo_styling {
-    text-align: center;
+    /* text-align: center; */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
     }
 
     .banner_container_main {
@@ -9494,6 +9520,10 @@ padding: 50px 0px;
      .component_container {
         padding-right: 30px !important;
         padding-left: 30px !important;
+    }
+
+    .component_container_mob {
+        padding-bottom: 30px !important;
     }
 
     .welcome_emaar_styling {

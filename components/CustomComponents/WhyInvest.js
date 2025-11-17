@@ -197,7 +197,7 @@ export default function WhyInvest() {
                                                 <div className="icon-box">
                                                     <span className="icon-plane">
                                                         <Image
-                       src="/assets/icon/polo_icons/polo_inspired.svg"
+                       src="/assets/icon/oasis_icons/waterfront.svg"
                         alt="world_class_amenities"
                         height={50}
                         width={300}

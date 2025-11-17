@@ -40,14 +40,25 @@ export default function Banner() {
             <div className="container banner_container_main banner_wrapper full_height">
                 <div className="main-slider-one__single slider_wrapper">
                  <div className='main_container_full_width'>
-                  <div style={{marginTop: 20}} className='logo_appear'>
+                  <div style={{marginTop: 20}} className='logo_appear logo_alignment'>
                      <div className='logo_styling'>
+  <Image
+  src="/assets/icon/oasis_logo.png"
+    alt="oasis_logo"
+    height={55}
+    width={300}
+    className='main_logo_styling_logo'
+  />
+  
+</div>
+
+    <div className='logo_styling'>
   <Image
    src="/assets/icon/emaar_logo.png"
     alt="emaar_logo"
     height={55}
     width={300}
-    className='main_logo_styling'
+    className='main_logo_styling logo_spacing'
   />
   
 </div>
@@ -56,6 +67,14 @@ export default function Banner() {
                <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 main_container">
 
                  <div className='logo_styling small_logo' style={{marginBottom: 10}}>
+  <div className='component_container mobile_logo_c component_container_mob'>
+    <Image
+      src="/assets/icon/oasis_logo.png"
+    alt="oasis_logo"
+    height={55}
+    width={300}
+    className='main_logo_styling'
+  />
   <Image
      src="/assets/icon/emaar_logo.png"
     alt="emaar_logo"
@@ -63,6 +82,7 @@ export default function Banner() {
     width={300}
     className='main_logo_styling'
   />
+  </div>
   
 </div>
                      <div className="container component_container">
