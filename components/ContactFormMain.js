@@ -167,8 +167,12 @@ export default function ContactForm() {
    setDisableBtn(false);
 
     if (result.result) {
-      router.push('/thank-you');
-      // Reset this form's captcha only
+      const country = searchParams.get("country");
+      if (country) {
+  router.push(`/thank-you?country=${country}`);
+} else {
+  router.push('/thank-you');
+}
                 setCaptchaToken(null);
                 if (recaptchaRef.current) {
                     recaptchaRef.current.reset();
