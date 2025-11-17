@@ -7,6 +7,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 import Image from 'next/image';
 import ContactFormMain from '@/components/ContactFormMain';
+import { useSearchParams } from 'next/navigation';
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
@@ -26,7 +27,20 @@ const swiperOptions = {
 }
 
 export default function Banner() {
-  
+  const searchParams = useSearchParams();
+  const [countryValue, setCountryValue] = useState('');
+   useEffect(() => {
+    const country = searchParams.get('country');
+    if (country) {
+  const formattedCountry = country
+    .replace(/_/g, ' ')
+    .toLowerCase()
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+  setCountryValue(formattedCountry);
+} else {
+      setCountryValue('');
+    }
+  }, [searchParams]);
   return (
     <>
     
@@ -73,7 +87,7 @@ export default function Banner() {
     alt="oasis_logo"
     height={55}
     width={300}
-    className='main_logo_styling_oasis'
+    className='main_logo_styling'
   />
   <Image
      src="/assets/icon/emaar_logo.png"
@@ -101,12 +115,12 @@ export default function Banner() {
       </div>
 
         <p className="down_styling">
-  SPACIOUS 4, 5 & 6-BEDROOM STANDALONE VILLAS STARTING FROM AED 13.13M*
+  SPACIOUS 4, 5 & 6-BEDROOM STANDALONE VILLAS STARTING FROM {countryValue == "British" ? "GBP 2.71M*" : "AED 13.13M*"}
 </p>
 
 <div className="resp_usd">
                         <p className="down_styling" style={{ lineHeight: '1.5' }}>
-                          *USD 3.58M / EUR 3.1M
+                          *USD 3.58M / EUR 3.1M {countryValue == "British" ? " / AED 13.13M" : " / GBP 2.71M"}
                         </p>
 
                         <p className="down_styling" style={{ lineHeight: '1.5' }}>

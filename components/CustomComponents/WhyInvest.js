@@ -60,7 +60,7 @@ export default function WhyInvest() {
                                             </div>
                 
                                                 <h2 className="investment_content">
-                <a href="javascript:void(0);">4, 5 & 6 Bedroom</a></h2>
+                <a href="javascript:void(0);">4, 5, & 6 Bedroom</a></h2>
                 <p className="investment_text">
                   <span className="about_para_span">Standalone Villas.</span>
                 </p> 

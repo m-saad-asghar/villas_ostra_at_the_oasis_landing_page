@@ -27,7 +27,7 @@ export default function Map() {
       <div className="themed_icons">
                       <div className="row portions_styling">
                           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay="0.1s">
-                              <div className="service-one__single custom_height">
+                              <div className="service-one__single custom_height_map">
                                   
                                   <div className="service-one__single-inner">
                                       
@@ -53,7 +53,7 @@ export default function Map() {
                           </div>
                           </div>
                           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay="0.1s">
-                              <div className="service-one__single custom_height">
+                              <div className="service-one__single custom_height_map">
                                   
                                   <div className="service-one__single-inner">
                                       
@@ -80,7 +80,7 @@ export default function Map() {
                           </div>
       
                           <div className="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay="0.1s">
-                              <div className="service-one__single custom_height">
+                              <div className="service-one__single custom_height_map">
                                   
                                   <div className="service-one__single-inner">
                                       
@@ -107,7 +107,7 @@ export default function Map() {
                           </div>
 
                            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay="0.1s">
-                              <div className="service-one__single custom_height">
+                              <div className="service-one__single custom_height_map">
                                   
                                   <div className="service-one__single-inner">
                                       
