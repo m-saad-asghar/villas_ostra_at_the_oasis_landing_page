@@ -95,17 +95,17 @@ export default function ThankYou() {
       </div>
     </div>
      {/* ✅ Google Analytics Event Script */}
-     {/* <Script id="lead-submission-polo-en" strategy="afterInteractive">
+     <Script id="ead-ostra-en" strategy="afterInteractive">
   {`
-    window.gtag('event', 'lead_polo_en', {
+    window.gtag('event', 'lead_ostra_en', {
       lead_language: 'english',
-      project_name: 'grand_polo',
-      landing_page: 'polo_en',
+      project_name: 'ostra',
+      landing_page: 'ostra_en',
       currency: 'AED',
-      value: 8
+      value: 9
     });
   `}
-</Script> */}
+</Script>
       </>
   );
 }
