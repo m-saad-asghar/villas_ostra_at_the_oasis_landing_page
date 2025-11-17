@@ -73,7 +73,7 @@ export default function Banner() {
     alt="oasis_logo"
     height={55}
     width={300}
-    className='main_logo_styling'
+    className='main_logo_styling_oasis'
   />
   <Image
      src="/assets/icon/emaar_logo.png"

@@ -464,6 +464,13 @@ h6 {
     /* filter: invert(100%) brightness(200%); */
 }
 
+.main_logo_styling_oasis {
+    height: 100%;
+    width: 100%;
+    max-width: 160px;
+    /* filter: invert(100%) brightness(200%); */
+}
+
 .main_logo_styling_logo {
     height: 100%;
     width: 100%;
@@ -6050,6 +6057,9 @@ Cart Page
 
 @media(max-width: 1199px) {
     .main_logo_styling {
+    max-width: 90px;
+}
+ .main_logo_styling_oasis {
     max-width: 80px;
 }
   .main_logo_styling_logo {
