@@ -5,6 +5,7 @@ import Lightbox from "yet-another-react-lightbox";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
+import Image from "next/image";
 
 const images = [
   "/assets/img/gallery_section/gallery_1.webp",
@@ -53,12 +54,14 @@ export default function Gallery() {
             className="gallery-item"
             onClick={() => handleOpen(i)}
           >
-            <img
-              src={src}
-              alt={`Gallery image ${i + 1}`}
-              className="gallery-image"
-              loading="lazy"
-            />
+           <Image
+        src={src}
+        alt={`Gallery image ${i + 1}`}
+        width={400}
+        height={220}
+        className="gallery-image"
+        loading="lazy"
+      />
           </button>
         ))}
       </div>
