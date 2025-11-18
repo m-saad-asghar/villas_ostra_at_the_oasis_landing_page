@@ -32,7 +32,7 @@ export default function ContactFormBrochure({ onSuccess }) {
 
     const downloadBrochure = () => {
   const link = document.createElement("a");
-  link.href = "/assets/pdf/The Palace Villas Ostra by Oasis Brochure.pdf";
+  link.href = "/assets/pdf/SHIRO Estate The Palace Villas Ostra by Oasis Brochure.pdf";
   link.download = "The Palace Villas Ostra by Oasis Brochure.pdf"; 
   link.click();
 };
