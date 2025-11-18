@@ -83,8 +83,6 @@ export default function ContactFormBrochure({ onSuccess }) {
   const handleSubmit = async (e) => {
   e.preventDefault();
 
-  downloadBrochure();
-
         if (!captchaToken) {
             setCaptchaError("Please verify that you are not a robot.");
             return;
