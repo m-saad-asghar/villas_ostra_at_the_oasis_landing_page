@@ -1,11 +1,34 @@
 "use client";
 import Link from "next/link"
 import Image from "next/image";
+import { useState, useEffect } from 'react'
+import ContactFormBrochure from "../ContactFormBrochure";
 import { FaPlane, FaGlobe, FaMedkit, FaSchool, FaHouseUser, FaChartLine, FaCity, FaGolfBall, FaTree, FaStore, FaBiking, FaTruckMonster, FaHotel, FaMoneyBill, FaWalking, FaMap, FaShieldAlt, FaIdCard, FaLightbulb, FaGift, FaKey, FaUsers, FaBriefcase, FaPassport, FaStar } from "react-icons/fa6";
 import { Home, Building, Trees, Umbrella, UmbrellaIcon, TreePine, Activity, Dumbbell, Sailboat, MapPin, Leaf, TrendingUp } from "lucide-react";
 export default function WhyInvest() {
+  const [showModal, setShowModal] = useState(false);
+    const handleBrochureSuccess = () => {
+    setShowModal(false);
+  };
     return (
         <>
+        {/* Modal */}
+{showModal && (
+  <div className="custom_modal_overlay">
+    <div
+      className="custom_modal_content"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <button className="custom_modal_close" onClick={() => setShowModal(false)}>
+        ✕
+      </button>
+      {/* Modal Content Start */}
+       <ContactFormBrochure onSuccess={handleBrochureSuccess}/>
+      {/* Modal Content End */}
+    </div>
+  </div>
+)}
+
             <section className="custom_container" id="timeless-luxury">
                 <div className="row margin_left_null">
 <div className="why_invest_wrapper_pictures col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -222,12 +245,9 @@ export default function WhyInvest() {
                               <div className="consultation_btn_style btn_cen custom_spacing_btn">
   <button
             className="hover_external_btn"
-            onClick={() => {
-              const element = document.getElementById("contact-form");
-              if (element) element.scrollIntoView({ behavior: "smooth" });
-            }}
+            onClick={() => setShowModal(true)}
           >
-            REGISTER NOW
+            DOWNLOAD BROCHURE
           </button>
 </div>
 

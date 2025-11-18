@@ -22,13 +22,13 @@ export default function Form() {
       </div>
 
       <div className="row apartment_row_styling margin_left_null">
-        <div className="why_invest_wrapper mobile_form_container col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <div className="why_invest_wrapper_form mobile_form_container col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
               <div className="form_container">
                 <ContactForm/>
               </div>
             </div>
-            <div className="why_invest_wrapper_image col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-               <div className="apartment_container">
+            <div className="why_invest_wrapper_form col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mobile_dissapear">
+               <div className="apartment_container apartment_container">
   <Image
      src="/assets/img/footer_image.jpg"
     alt="Contact Image"
