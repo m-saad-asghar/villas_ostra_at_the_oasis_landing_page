@@ -8,17 +8,17 @@ const CONVERSION_MAP = {
   british: {
     eventName: 'palacevillas_uk_gbp',
     currency: 'GBP',
-    value: 1,
+    value: 9,
   },
   saudi_arabia: {
     eventName: 'palacevillas_saudi_sar',
     currency: 'SAR',
-    value: 1,
+    value: 10,
   },
   united_arab_emirates: {
     eventName: 'palacevillas_uae_aed',
     currency: 'AED',
-    value: 1,
+    value: 11,
   },
 };
 
@@ -26,7 +26,7 @@ const CONVERSION_MAP = {
 const DEFAULT_CONVERSION = {
   eventName: 'palacevillas_generic_lead',
   currency: 'AED',
-  value: 1,
+  value: 12,
 };
 
 // Inline SVG replacement for FaCheckCircle
