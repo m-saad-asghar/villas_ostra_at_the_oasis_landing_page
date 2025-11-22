@@ -7,6 +7,7 @@ import "swiper/css/pagination"
 import 'swiper/css/free-mode';
 import { dM_Sans, } from '@/lib/font'
 import { Toaster } from 'react-hot-toast';
+import WhatsAppButton from "../components/CustomComponents/WhatsAppButton";
 export const metadata = {
     title: 'Palace: Villas Ostra at the Oasis EN - EMAAR',
     description: 'Project by EMAAR',
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
             <head>
 
               {/* Google Analytics */}
+
        <Script
         strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=G-ZWL7SWGJFK"
@@ -70,6 +72,19 @@ export default function RootLayout({ children }) {
             <body>
                 {children}
                 <Toaster position="top-right" reverseOrder={false} />
+                 <div
+          style={{
+            position: "fixed",
+            bottom: "20px",
+            right: "20px",
+            zIndex: 9999,
+            display: "flex",
+            flexDirection: "column",
+            gap: "50px",
+          }}
+        >
+          <WhatsAppButton />
+        </div>
             </body>
         </html>
     )
