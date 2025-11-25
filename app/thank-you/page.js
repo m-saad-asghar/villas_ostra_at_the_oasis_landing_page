@@ -5,6 +5,16 @@ import React, { useEffect, useState } from 'react';
 // --- CONFIGURATION MAP: Maps 'country' param to specific event and currency ---
 const CONVERSION_MAP = {
   // URL Parameter (in lowercase) : Event Name, Currency, and Value
+  america: {
+    eventName: 'palacevillas_america_usd',
+    currency: 'USD',
+    value: 7,
+  },
+  australia: {
+    eventName: 'palacevillas_australia_aud',
+    currency: 'AUD',
+    value: 8,
+  },
   british: {
     eventName: 'palacevillas_uk_gbp',
     currency: 'GBP',
